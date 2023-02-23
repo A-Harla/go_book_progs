@@ -57,7 +57,7 @@ func main() {
 				return
 			} else {
 				if arg1 < arg2 { // В случае если аргументы не равны, определяем какой из аргументов больше
-					result := "Arguments are not equal!\n Min: " + arguments[2] + "\n Max: " + arguments[1] + "\n"
+					result := "Arguments are not equal!\n Min: " + arguments[1] + "\n Max: " + arguments[2] + "\n"
 					_, errIo := io.WriteString(os.Stdout, result)
 					if errIo != nil {
 						catchIoError(errIo)
@@ -65,7 +65,7 @@ func main() {
 					}
 					return
 				} else {
-					result := "Arguments are not equal!\n Min: " + arguments[1] + "\n Max: " + arguments[2] + "\n"
+					result := "Arguments are not equal!\n Min: " + arguments[2] + "\n Max: " + arguments[1] + "\n"
 					_, errIo := io.WriteString(os.Stdout, result)
 					if errIo != nil {
 						catchIoError(errIo)
